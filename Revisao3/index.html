@@ -3,16 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana de Tecnologia</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/estilo.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <img src="" alt="">
-        <h1>Inteligência artificial e o futuro da tecnologia</h1>
-        <h2>Prof. Dr. </h2>
-        <h2>24/04</h2>
-        <p>Descubra como a IA está transformando o mundo e quais são os próximos desafios.</p>
-    </div>
+    <header class="cabecalho" id="inicio">
+        <nav class="menu container">
+            <h2 class="menu__logo">
+                Semana de Tecnologia
+            </h2>
+            <ul class="menu__lista">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#palestrantes">Palestrantes</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="destaque" id="palestrantes">
+            <article class="destaque__card">
+                <div class="destaque__imagem">
+                    <img src="imagens/mulherPalestra.jpg" alt="Professora Ana Torres apresentando uma palestra">
+                </div>
+                <div class="destaque__conteudo">
+                    <span class="destaque__etiqueta">
+                        Palestra Principal
+                    </span>
+                    <h1>Inteligência Artificial e o Futuro da Tecnologia</h1>
+                    <p class="destaque__palestrante">Prof. Dra. Ana Torres</p>
+                    <p class="destaque__data">24/04 | 19h30</p>
+                    <p class="destaque__local">Auditório Central</p>
+                    <p class="destaque__descricao"> Descubra como a IA está transformando o mundo e quais são os próximos desafios.</p>
+                    <a href="#programacao" class="destaque__botao btn btn-primary">Saiba mais</a>
+                </div>
+            </article>
+        </section>
+        <section class="programacao mt-5" id="programacao">
+            <h2 class="programacao__titulo">Programação</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="programacao__card">
+                        <h3 class="programacao__subtitulo">Palestra</h3>
+                        <p>Inteligência Artificial e suas aplicações no mundo atual.</p>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="programacao__card">
+                        <h3 class="programacao__subtitulo"> Workshop</h3>
+                        <p>Atividades práticas sobre tecnologia e inovação.</p>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="programacao__card">
+                        <h3 class="programacao__subtitulo">Hackathon</h3>
+                        <p> Desafios de criatividade e desenvolvimento de soluções tecnológicas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="inscricao mt-5 mb-5" id="inscricao">
+            <div class="alert alert-info" role="alert">
+                <h2 class="inscricao__titulo">Participe da Semana de Tecnologia!</h2>
+                <p>Acompanhe nossa programação e participe das atividades do evento.</p>
+                <a href="#inicio" class="btn btn-primary">Voltar ao início</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Semana de Tecnologia</p>
+    </footer>
+
 </body>
-</html>
+</html
